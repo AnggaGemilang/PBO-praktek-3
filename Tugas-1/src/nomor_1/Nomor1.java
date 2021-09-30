@@ -30,7 +30,7 @@ public class Nomor1 {
                     }
                     if(numberValue >= Long.MIN_VALUE && numberValue <= Long.MAX_VALUE){
                         System.out.println("* long");
-                    }                
+                    }     
                 } catch(NumberFormatException e){
                     System.out.println(value + " can't be fitted anywhere.");
                 }

@@ -41,6 +41,10 @@ public class Makanan {
     }
 
     public void setStok(int stok) {
+        this.stok = stok;
+    }    
+    
+    public void setKurangiStok(int stok) {
         this.stok -= stok;
     }
 }

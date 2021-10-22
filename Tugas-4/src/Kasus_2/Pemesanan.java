@@ -5,7 +5,6 @@
  */
 package Kasus_2;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,17 +12,13 @@ import java.util.Map;
  *
  * @author angga
  */
-public class Pemesanan {
-    private String namaPemesan;
-    private HashMap<Makanan, Integer> daftarPesanan;
-    private double totalHarga;
-    private Date tglPemesanan;
-    
-    {
-        daftarPesanan = new HashMap<>();
-    }
-
-    public Pemesanan(String namaPemesan, HashMap<Makanan, Integer> daftarPesanan, Date tglPemesanan){
+public final class Pemesanan {
+    private final String namaPemesan;
+    private final HashMap<Makanan, Integer> daftarPesanan;
+    private final double totalHarga;
+    private final String tglPemesanan;
+   
+    public Pemesanan(String namaPemesan, HashMap<Makanan, Integer> daftarPesanan, String tglPemesanan){
         this.namaPemesan = namaPemesan;
         this.daftarPesanan = daftarPesanan;
         this.tglPemesanan = tglPemesanan;
@@ -50,6 +45,6 @@ public class Pemesanan {
     }
 
     public String getTglPemesanan() {
-        return tglPemesanan.getDay()+"/"+tglPemesanan.getMonth()+"/"+tglPemesanan.getYear()+" "+tglPemesanan.getHours()+":"+tglPemesanan.getMinutes();
+        return tglPemesanan;
     }
 }

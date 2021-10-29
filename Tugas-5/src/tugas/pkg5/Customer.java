@@ -18,18 +18,13 @@ public class Customer {
     private Alamat alamat;
     private String tglLahir;
     private char gender;
-    private ArrayList<String> kodeProduk;
     
-    {
-        setKodeProduk(new ArrayList<>());
-    }
-
-    public Customer(String jalan, int rt, int rw, 
-            String kecamatan, String kelurahan, 
-            String provinsi, String nama, String noTelp, 
-            String alamat, String tglLahir, char gender){
-        this.alamat = new Alamat(jalan, rt, rw, kecamatan, 
-                kelurahan, provinsi);
+    public Customer(String jalan, int rt, int rw, String kecamatan, String kelurahan, 
+            String provinsi, String nama, String noTelp, String alamat, String tglLahir, 
+            char gender){
+        
+        this.alamat = new Alamat(jalan, rt, rw, kecamatan, kelurahan, provinsi);
+        
         this.nama = nama;
         this.noTelp = noTelp;
         this.tglLahir = tglLahir;
@@ -74,18 +69,6 @@ public class Customer {
 
     public void setGender(char gender) {
         this.gender = gender;
-    }
-
-    public ArrayList<String> getKodeProduk() {
-        return kodeProduk;
-    }
-
-    public void setKodeProduk(ArrayList<String> kodeProduk) {
-        this.kodeProduk = kodeProduk;
-    }
-    
-    public void addKodeProduk(String kodeProduk){
-        this.kodeProduk.add(kodeProduk);
     }
         
 }

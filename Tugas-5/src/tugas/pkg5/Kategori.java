@@ -5,30 +5,20 @@
  */
 package tugas.pkg5;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author angga
  */
-public class Toko {
+public class Kategori {
+    
     private String nama;
     private String deskripsi;
-    private ArrayList<Produk> daftarProduk;
     
-    {
-        daftarProduk = new ArrayList<>();
-    }
-    
-    public Toko(String nama, String deskripsi){
+    public Kategori(String nama, String deskripsi){
         this.nama = nama;
         this.deskripsi = deskripsi;
     }
-    
-    public void addProduk(Produk produk){
-        daftarProduk.add(produk);
-    }
-    
+
     public String getNama() {
         return nama;
     }
@@ -43,15 +33,6 @@ public class Toko {
 
     public void setDeskripsi(String deskripsi) {
         this.deskripsi = deskripsi;
-    }
-
-    public ArrayList<Produk> getDaftarProduk() {
-        return daftarProduk;
-    }
-
-    public void setDaftarProduk(ArrayList<Produk> 
-            daftarProduk) {
-        this.daftarProduk = daftarProduk;
     }
     
 }

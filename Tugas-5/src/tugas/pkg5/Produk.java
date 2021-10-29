@@ -16,18 +16,27 @@ public class Produk {
     private String kodeProduksi;
     private String nama;
     private String deskripsi;
-    private ArrayList<Integer> rating;
+    private ArrayList<Kategori> kategori;
     private int stok;
     
     {
-        setRating(new ArrayList<>());
+        kategori = new ArrayList<>();
     }
 
-    public Produk(String kodeProduksi, String nama, String deskripsi, int stok){
+    public Produk(String kodeProduksi, String nama, 
+            String deskripsi, int stok){
         this.kodeProduksi = kodeProduksi;
         this.nama = nama;
         this.deskripsi = deskripsi;
         this.stok = stok;
+    }
+    
+    public ArrayList<Kategori> getKategori(){
+        return kategori;
+    }
+    
+    public void addKategori(Kategori kategori){
+        this.kategori.add(kategori);
     }
     
     public String getNama() {
@@ -52,14 +61,6 @@ public class Produk {
 
     public void setStok(int stok) {
         this.stok = stok;
-    }
-
-    public ArrayList<Integer> getRating() {
-        return rating;
-    }
-
-    public void setRating(ArrayList<Integer> rating) {
-        this.rating = rating;
     }
 
     public String getKode_produksi() {

@@ -1,4 +1,5 @@
-# Hi there 👋 , I'm Bagus!
+# Hi there 👋 , I'm Angga! (Lagi Nyobain)
+
 Currently working with Robotic Process Automation, but I love learn new thing in programming such as Javascript, Swift, Python.  
 
 ### Tools:

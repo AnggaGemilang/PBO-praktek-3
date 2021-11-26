@@ -15,7 +15,7 @@ public class Rectangle extends Shape {
     private final double width;
 
     public Rectangle(double length, double width) {
-        super("shapeName");
+        super("Rectangle");
         this.length = length;
         this.width = width;
     }

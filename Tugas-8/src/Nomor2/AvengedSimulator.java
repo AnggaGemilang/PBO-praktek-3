@@ -28,7 +28,6 @@ public class AvengedSimulator {
         for (var hero : superHero) {
             System.out.println("===============================");
             hero.identity();
-            hero.showPowers();
             System.out.println("===============================");
         }
     }

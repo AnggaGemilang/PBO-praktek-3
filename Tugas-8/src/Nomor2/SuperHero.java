@@ -40,12 +40,11 @@ public abstract class SuperHero implements Comparable<SuperHero> {
     }
 	
     public void identity(){
-      	System.out.println(".....HEED ME.....");		
-        System.out.println("FOR MY NAAAAAAAAME IS " + this.getName().toUpperCase());
+        System.out.println("“Siap ! saya " + this.name + " siap menjadi pahlawan dengan kekuatan");
+        showPowers();
     }
 	
     public void showPowers() {
-	System.out.println("TIME TO SHOW YOU MY POWERS");
         powerList.forEach(power -> {
             power.doPower();
         });

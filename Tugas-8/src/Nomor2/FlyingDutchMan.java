@@ -16,11 +16,5 @@ public class FlyingDutchMan extends SuperHero {
 	super.addPower(new Flying());
 	super.addPower(new LaserEye());
     }
-
-    @Override
-    public void identity() {
-        System.out.printf("It's %s, the FlyingDutchMan! It has the power level of %d\n", this.getName(), this.getPowerLevel());
-         super.identity();
-    }
     
 }

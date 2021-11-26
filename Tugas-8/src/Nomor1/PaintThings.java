@@ -18,13 +18,9 @@ public class PaintThings {
 	final double COVERAGE = 350;
 	Paint paint = new Paint(COVERAGE);
 
-	Rectangle deck;
-	Sphere bigBall;
-	Cylinder tank;
-
-       	deck = new Rectangle(20,35);
-	bigBall = new Sphere(15);
-	tank = new Cylinder(10,30);
+       	Shape deck = new Rectangle(20,35);
+	Shape bigBall = new Sphere(15);
+	Shape tank = new Cylinder(10,30);
         
 	double deckAmt, ballAmt, tankAmt;
         

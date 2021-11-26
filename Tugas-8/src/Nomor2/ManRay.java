@@ -17,10 +17,4 @@ public class ManRay extends SuperHero {
 	super.addPower(new Strength());
     }
 
-    @Override
-    public void identity() {
-	System.out.printf("It's %s, the ManRay! It has the power level of %d\n", this.getName(), this.getPowerLevel());
-        super.identity();
-    }
-
 }

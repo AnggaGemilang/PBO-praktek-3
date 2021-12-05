@@ -15,12 +15,15 @@ import org.junit.Before;
  */
 
 public class AirportTest {
+    
     private Flight economyFlight, businessFlight;
-    @Before   
+    
+    @Before
     public void setUp() {
         economyFlight = new EconomyFlight("1");
         businessFlight = new BusinessFlight("2");
     }
+    
     @Test
     public void testEconomyFlightRegularPassenger() {
         Passenger mike = new Passenger("Mike", false);
@@ -31,6 +34,7 @@ public class AirportTest {
         assertEquals(true, economyFlight.removePassenger(mike));
         assertEquals(0, economyFlight.getPassengersList().size());
     }   
+    
     @Test
     public void testEconomyFlightVipPassenger() {
         Passenger james = new Passenger("James", true);
@@ -41,6 +45,7 @@ public class AirportTest {
         assertEquals(false, economyFlight.removePassenger(james));
         assertEquals(1, economyFlight.getPassengersList().size());
     }
+    
     @Test
     public void testBusinessFlightRegularPassenger() {
         Passenger mike = new Passenger("Mike", false);
@@ -49,6 +54,7 @@ public class AirportTest {
         assertEquals(false, businessFlight.removePassenger(mike));
         assertEquals(0, businessFlight.getPassengersList().size());
     }
+    
     @Test
     public void testBusinessFlightVipPassenger() {
         Passenger james = new Passenger("James", true);
@@ -57,4 +63,5 @@ public class AirportTest {
         assertEquals(false, businessFlight.removePassenger(james));
         assertEquals(1, businessFlight.getPassengersList().size());
     }
+    
 }   

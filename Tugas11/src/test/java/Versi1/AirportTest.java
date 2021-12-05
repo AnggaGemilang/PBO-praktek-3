@@ -13,6 +13,7 @@ import org.junit.Before;
  *
  * @author angga
  */
+
 public class AirportTest {
     
     private Flight businessFlight, economyFlight;
@@ -22,7 +23,7 @@ public class AirportTest {
         economyFlight = new Flight("1", "Economy");
         businessFlight = new Flight("2", "Business");
     }
-
+    
     @Test
     public void testEconomyFlightRegularPassenger() {
         Passenger mike = new Passenger("Mike", false);
